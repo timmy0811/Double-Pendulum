@@ -1,9 +1,4 @@
-﻿  imgui-SFML.cpp
-C:\Git\SFML_template\SFML_Template\SFML_Template\imgui\imgui-SFML.cpp(559,67): warning C4244: "Argument": Konvertierung von "const int" in "float", möglicher Datenverlust
-C:\Git\SFML_template\SFML_Template\SFML_Template\imgui\imgui-SFML.cpp(559,48): warning C4244: "Argument": Konvertierung von "const int" in "float", möglicher Datenverlust
-  imgui.cpp
-  imgui_draw.cpp
-  imgui_tables.cpp
-  imgui_widgets.cpp
+﻿  Game.cpp
+  main.cpp
   Code wird generiert...
-  SFML_Template.vcxproj -> C:\Git\SFML_template\SFML_Template\x64\Debug\SFML_Template.exe
+  SFML_Template.vcxproj -> D:\Git\Double-Pendulum\SFML_Template\x64\Debug\SFML_Template.exe
