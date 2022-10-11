@@ -39,7 +39,7 @@ std::vector<std::vector<float>> Pendulum::step()
 
 std::vector<std::vector<float>> Pendulum::getTrajectory() const
 {
-    return m_Trajectory[m_Trajectory.size()];
+    return m_Trajectory[m_Trajectory.size() - 1];
 }
 
 void Pendulum::Log() const

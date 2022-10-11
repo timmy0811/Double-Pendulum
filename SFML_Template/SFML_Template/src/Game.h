@@ -9,6 +9,7 @@
 #include "imgui-SFML.h"
 
 #include "Pendulum/Pendulum.h"
+#include "Pendulum/PendulumAnimator.h"
 
 /*
 	Game depending functions
@@ -37,7 +38,8 @@ private:
 	float dt;
 
 	// Game objects
-	Pendulum pendulum{0.f, 0.5f, 0.01f};
+	Pendulum pendulum{-2.f, 1.f, 0.008f};
+	PendulumAnimator Animator{ &pendulum };
 
 public:
 	// Constructors

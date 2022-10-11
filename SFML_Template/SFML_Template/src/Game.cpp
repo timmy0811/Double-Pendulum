@@ -25,7 +25,7 @@ void Game::initWindow() {
     this->videoMode.width = 1000;
 
     this->window = new sf::RenderWindow(this->videoMode, this->windowTitle, sf::Style::Titlebar | sf::Style::Close);
-    this->window->setFramerateLimit(30);
+    this->window->setFramerateLimit(60);
 
     ImGui::SFML::Init(*window);
 }
@@ -75,7 +75,7 @@ void Game::update() {
 
     this->pollEvents();
 
-    pendulum.Log();
+    //pendulum.Log();
     pendulum.step();
 
     ImGui::Begin("Window");
@@ -90,6 +90,8 @@ void  Game::render() {
     */
 
     this->window->clear(sf::Color(255, 255, 255, 255));
+
+    Animator.drawPendulum(window);
 
     ImGui::SFML::Render(*window);
     this->window->display();
