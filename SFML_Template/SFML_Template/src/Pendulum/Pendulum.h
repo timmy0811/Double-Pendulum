@@ -19,7 +19,8 @@ public:
 	Pendulum(float ang1, float ang2, float timestep);
 
 	std::vector<std::vector<float>> step();
-	void Log() const;
+	std::vector<std::vector<float>> getTrajectory() const;
 
+	void Log() const;
 };
 

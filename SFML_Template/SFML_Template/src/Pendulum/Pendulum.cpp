@@ -37,6 +37,11 @@ std::vector<std::vector<float>> Pendulum::step()
     return new_position;
 }
 
+std::vector<std::vector<float>> Pendulum::getTrajectory() const
+{
+    return m_Trajectory[m_Trajectory.size()];
+}
+
 void Pendulum::Log() const
 {
     std::vector<std::vector<float>> stepRef = m_Trajectory[m_Trajectory.size() - 1];
