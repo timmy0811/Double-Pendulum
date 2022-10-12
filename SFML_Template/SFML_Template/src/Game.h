@@ -38,7 +38,7 @@ private:
 	float dt;
 
 	// Game objects
-	Pendulum pendulum{-2.f, 1.f, 0.008f};
+	Pendulum pendulum{3.1415, 0.f, 0.01f};
 	PendulumAnimator Animator{ &pendulum };
 
 public:

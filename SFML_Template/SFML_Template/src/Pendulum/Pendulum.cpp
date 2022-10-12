@@ -23,14 +23,14 @@ std::vector<std::vector<float>> Pendulum::step()
     float expr2 = sin(theta1 - theta2);
     float expr3 = (1 + expr2 * expr2);
     float expr4 = p1 * p2 * expr2 / expr3;
-    float expr5 = (p1 * p1 + 2 * p2 * p2 - p1 * p2 * expr1)
-        * sin(2 * (theta1 - theta2)) / 2 / expr3 * expr3;
+    float expr5 = (p1 * p1 + 2 * (p2 * p2) - p1 * p2 * expr1)
+        * sin(2 * (theta1 - theta2)) / 2 / (expr3 * expr3);
     float expr6 = expr4 - expr5;
 
     m_Angle[0] += m_Timestep * (p1 - p2 * expr1) / expr3;
     m_Angle[1] += m_Timestep * (2 * p2 - p1 * expr1) / expr3;
     m_P[0] += m_Timestep * (-2 * m_G * m_Length * sin(theta1) - expr6);
-    m_P[1] += m_Timestep * (-m_G * m_Length * sin(theta2) + expr6);
+    m_P[1] += m_Timestep * (    -m_G * m_Length * sin(theta2) + expr6);
 
     std::vector<std::vector<float>> new_position = calcPolarToCartesian();
     m_Trajectory.push_back(new_position);

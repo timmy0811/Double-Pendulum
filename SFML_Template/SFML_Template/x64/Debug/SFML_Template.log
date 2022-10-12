@@ -1,4 +1,6 @@
 ﻿  Game.cpp
+D:\Git\Double-Pendulum\SFML_Template\SFML_Template\src\Game.h(41,39): warning C4305: "Argument": Verkürzung von "double" in "float"
   main.cpp
+D:\Git\Double-Pendulum\SFML_Template\SFML_Template\src\Game.h(41,39): warning C4305: "Argument": Verkürzung von "double" in "float"
   Code wird generiert...
-  SFML_Template.vcxproj -> C:\Git\Double-Pendulum\SFML_Template\x64\Debug\SFML_Template.exe
+  SFML_Template.vcxproj -> D:\Git\Double-Pendulum\SFML_Template\x64\Debug\SFML_Template.exe
