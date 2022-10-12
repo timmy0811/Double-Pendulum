@@ -1,18 +1,4 @@
-﻿  Pendulum.cpp
-  PendulumAnimator.cpp
-  Game.cpp
-C:\Git\Double-Pendulum\SFML_Template\SFML_Template\src\Game.h(41,39): warning C4305: "Argument": Verkürzung von "double" in "float"
-  imgui-SFML.cpp
-C:\Git\Double-Pendulum\SFML_Template\SFML_Template\imgui\imgui-SFML.cpp(559,67): warning C4244: "Argument": Konvertierung von "const int" in "float", möglicher Datenverlust
-C:\Git\Double-Pendulum\SFML_Template\SFML_Template\imgui\imgui-SFML.cpp(559,48): warning C4244: "Argument": Konvertierung von "const int" in "float", möglicher Datenverlust
-  imgui.cpp
-  imgui_draw.cpp
-  imgui_tables.cpp
-  imgui_widgets.cpp
+﻿  Game.cpp
   main.cpp
-C:\Git\Double-Pendulum\SFML_Template\SFML_Template\src\Game.h(41,39): warning C4305: "Argument": Verkürzung von "double" in "float"
   Code wird generiert...
-PendulumAnimator.obj : error LNK2019: Verweis auf nicht aufgelöstes externes Symbol ""public: __cdecl TrailCanvas::TrailCanvas(class Pendulum *,class sf::Vector2<float>)" (??0TrailCanvas@@QEAA@PEAVPendulum@@V?$Vector2@M@sf@@@Z)" in Funktion ""public: __cdecl PendulumAnimator::PendulumAnimator(class Pendulum *)" (??0PendulumAnimator@@QEAA@PEAVPendulum@@@Z)".
-PendulumAnimator.obj : error LNK2019: Verweis auf nicht aufgelöstes externes Symbol ""public: void __cdecl TrailCanvas::updateTrail(class sf::Vector2<float>)" (?updateTrail@TrailCanvas@@QEAAXV?$Vector2@M@sf@@@Z)" in Funktion ""public: void __cdecl PendulumAnimator::drawPendulum(class sf::RenderTarget *)" (?drawPendulum@PendulumAnimator@@QEAAXPEAVRenderTarget@sf@@@Z)".
-PendulumAnimator.obj : error LNK2019: Verweis auf nicht aufgelöstes externes Symbol ""public: void __cdecl TrailCanvas::draw(class sf::RenderTarget *)const " (?draw@TrailCanvas@@QEBAXPEAVRenderTarget@sf@@@Z)" in Funktion ""public: void __cdecl PendulumAnimator::drawPendulum(class sf::RenderTarget *)" (?drawPendulum@PendulumAnimator@@QEAAXPEAVRenderTarget@sf@@@Z)".
-C:\Git\Double-Pendulum\SFML_Template\x64\Debug\SFML_Template.exe : fatal error LNK1120: 3 nicht aufgelöste Externe
+  SFML_Template.vcxproj -> C:\Git\Double-Pendulum\SFML_Template\x64\Debug\SFML_Template.exe

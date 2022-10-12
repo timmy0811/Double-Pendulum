@@ -30,7 +30,7 @@ void PendulumAnimator::drawPendulum(sf::RenderTarget* target)
 	//sf::Vector2f lastpos{ 0.f, 0.f };
 	for (int i = 0; i < position.size(); i++) {
 		if (i == 0) {
-			m_Knots[0].setPosition({ 500.f, 300.f });
+			m_Knots[0].setPosition({ 500.f, 500.f });
 		}
 		else {
 			float x = m_Knots[i - 1].getPosition().x + position[i][0] * 200 - m_Knots[i].getRadius() / 2;
@@ -47,8 +47,7 @@ void PendulumAnimator::drawPendulum(sf::RenderTarget* target)
 			target->draw(line);
 		}
 
-		//lastpos = m_Knots[i].getPosition();
-		m_Canvas.updateTrail({ position[2][0], position[2][1]});
+		m_Canvas.updateTrail(m_Knots[2].getPosition());
 		m_Canvas.draw(target);
 
 		target->draw(m_Knots[i]);

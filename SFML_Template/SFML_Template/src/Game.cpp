@@ -25,7 +25,7 @@ void Game::initWindow() {
     this->videoMode.width = 1000;
 
     this->window = new sf::RenderWindow(this->videoMode, this->windowTitle, sf::Style::Titlebar | sf::Style::Close);
-    this->window->setFramerateLimit(60);
+    this->window->setFramerateLimit(144);
 
     ImGui::SFML::Init(*window);
 }

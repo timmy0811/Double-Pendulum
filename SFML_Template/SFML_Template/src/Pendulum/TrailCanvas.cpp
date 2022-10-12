@@ -3,8 +3,9 @@
 TrailCanvas::TrailCanvas(Pendulum* pendulum, sf::Vector2f dim)
 	:m_Pendulum(pendulum)
 {
-	m_Texture.create(dim.x, dim.y);
+	m_Texture.create((unsigned int)dim.x, (unsigned int)dim.y);
 	m_Sprite.setPosition({ 0.f, 0.f });
+	m_Sprite.setTexture(m_Texture);
 }
 
 void TrailCanvas::updateTrail(sf::Vector2f position)

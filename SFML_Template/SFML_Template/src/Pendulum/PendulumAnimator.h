@@ -3,7 +3,6 @@
 #include <SFML/Graphics.hpp>
 #include <vector>
 
-#include "Pendulum.h"
 #include "TrailCanvas.h"
 
 class PendulumAnimator
