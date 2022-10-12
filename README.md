@@ -1,3 +1,3 @@
 # SFML_template
-SFML template for basic graphic applications
-* Using ImGui:SFML for GUI integration
+A Double Pendulum simulated in SFML
+![](https://github.com/timmy0811/Double-Pendulum/blob/main/jkghjk.PNG?raw=true)
