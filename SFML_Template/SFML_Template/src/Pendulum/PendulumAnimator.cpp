@@ -48,6 +48,8 @@ void PendulumAnimator::drawPendulum(sf::RenderTarget* target)
 		}
 
 		//lastpos = m_Knots[i].getPosition();
+		m_Canvas.updateTrail({ position[2][0], position[2][1]});
+		m_Canvas.draw(target);
 
 		target->draw(m_Knots[i]);
 	}

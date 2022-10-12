@@ -4,11 +4,14 @@
 #include <vector>
 
 #include "Pendulum.h"
+#include "TrailCanvas.h"
 
 class PendulumAnimator
 {
 private:
 	Pendulum* m_Pendulum;
+	TrailCanvas m_Canvas{m_Pendulum, {1000.f, 1000.f}};
+
 	sf::CircleShape m_Knots[3];
 	std::vector<sf::VertexArray> m_Lines;
 
